@@ -127,7 +127,7 @@ const DetailsPage = () => {
             }}
           >
             <div>
-              <h1 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "8px" }}>
+              <h1 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "8px" ,color:"white" }}>
                 {movie.Title}
               </h1>
               <p style={{ color: "#888" }}>
@@ -167,8 +167,8 @@ const DetailsPage = () => {
                   key={index}
                   style={{
                     padding: "4px 8px",
-                    background: "#222",
-                    color: "#ccc",
+                    background: "#fff",
+                    color: "#000",
                     fontSize: "12px",
                     borderRadius: "8px",
                   }}
@@ -185,15 +185,15 @@ const DetailsPage = () => {
               <img
                 src={StarIcon}
                 alt="Star"
-                style={{ width: "16px", height: "16px", marginRight: "4px" }}
+                style={{ width: "16px", height: "16px", marginRight: "4px", color:"yellow"}}
               />
-              <span style={{ fontWeight: "600" }}>{movie.imdbRating}/10</span>
+              <span style={{ fontWeight: "600",color:"yellow" }}>{movie.imdbRating}/10</span>
             </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center",color:"white"  }}>
               <img
                 src={ClockIcon}
                 alt="Runtime"
-                style={{ width: "16px", height: "16px", marginRight: "4px" }}
+                style={{ width: "16px", height: "16px", marginRight: "4px",color:"white" }}
               />
               <span>{movie.Runtime}</span>
             </div>
@@ -201,7 +201,7 @@ const DetailsPage = () => {
 
           {/* Synopsis */}
           <div style={{ marginBottom: "24px" }}>
-            <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "8px" }}>
+            <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "8px" ,color:"white"}}>
               Synopsis
             </h2>
             <p style={{ color: "#ccc", lineHeight: "1.5" }}>{movie.Plot}</p>
@@ -210,7 +210,7 @@ const DetailsPage = () => {
           {/* Cast */}
           {movie.Actors && (
             <div style={{ marginBottom: "24px" }}>
-              <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "8px" }}>
+              <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "8px",color:"white" }}>
                 Cast
               </h2>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -219,9 +219,10 @@ const DetailsPage = () => {
                     key={index}
                     style={{
                       padding: "4px 8px",
-                      background: "#222",
-                      color: "#ccc",
+                      background: "#fff",
+                      color: "#000",
                       borderRadius: "8px",
+
                     }}
                   >
                     {actor}

@@ -45,40 +45,6 @@ const Header = ({ searchQuery, setSearchQuery }) => {
           FilmHub
         </Link>
 
-        {/* Search Bar */}
-        {isHomePage && (
-          <div style={{ position: "relative", width: "100%", maxWidth: "400px" }}>
-            <input
-              type="text"
-              placeholder="Search movies..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              style={{
-                width: "100%",
-                backgroundColor: "#374151", // gray-700
-                color: "white",
-                padding: "8px 8px 8px 36px",
-                borderRadius: "8px",
-                border: "none",
-                outline: "none",
-                fontSize: "14px",
-              }}
-            />
-            <img
-              src={searchIcon}
-              alt="Search"
-              style={{
-                position: "absolute",
-                left: "10px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                height: "20px",
-                width: "20px",
-                opacity: 0.7,
-              }}
-            />
-          </div>
-        )}
 
         {/* Navigation */}
         <nav style={{ display: "flex", alignItems: "center", gap: "12px" }}>
